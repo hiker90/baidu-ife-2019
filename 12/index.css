@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+/*三大主块布局*/
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0 0 100px;
+	background-color: #1d2531;
+}
+.subnav {
+	flex: 0 0 210px;
+	background-color: #222c3c;
+	padding: 20px;
+}
+.main {
+	flex: auto;
+}
+/*nav一级菜单栏*/
+.navhead {
+	display: flex;
+	height: 400px;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 10px;
+}
+.navhead > img {
+	width: 60px;
+	height: 60px;
+}
+.navbottom {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbottom > img {
+	width: 16px;
+	height: 16px;
+}
+/*subnav栏*/
+.subnav> ul {
+	padding: 10px 0;
+	margin: 10px 20px;
+}
+.menu, .products {
+	border-bottom: 1px solid #444;
+}
+.menu {
+	margin-top: 20px;
+}
+.subnav li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #999;
+}
+.subnav .ultitle {
+	color: #ccc;
+}
